@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: black;
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+#timer {
+    z-index: 1;
+    height: 30%;
+    position: absolute;
+    font-size: 150px;
+}

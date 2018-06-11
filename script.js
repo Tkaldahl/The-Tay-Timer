@@ -4,16 +4,17 @@ var interval = null
 function startTimer () {
   count = 60
   timer()
-  stopTimer()
+  // stopTimer()
   interval = setInterval(timer, 1000)
 }
+
 function timer () {
-  document.getElementById('counter').innerHTML = count--
+  document.getElementById('timer').innerHTML = count--
   console.log(count)
   if (count === -2) {
     clearInterval(interval)
     alert("time's up!")
-    document.getElementById('counter').innerHTML = 0
+    document.getElementById('timer').innerHTML = 0
   }
 }
 
